@@ -1,4 +1,4 @@
-$LOAD_PATH.push File.expand_path("../lib", __FILE__)
+$LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'active_resource/version'
 
 Gem::Specification.new do |s|
@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.extra_rdoc_files = %w( README.rdoc )
-  s.rdoc_options.concat ['--main',  'README.rdoc']
+  s.rdoc_options.concat %w(--main README.rdoc)
 
   s.required_ruby_version = '>= 2.2.2'
 
   s.add_dependency('activesupport', '> 4.2', '< 6')
-  s.add_dependency('activemodel', '> 4.2', '< 6')
-  s.add_dependency('activemodel-serializers-xml', '~> 1.0')
+  s.add_dependency('activemodel', '> 5.x', '< 6')
+  s.add_dependency('activemodel-serializers-xml', '~> 1.0.1')
 
   s.add_development_dependency('rake')
   s.add_development_dependency('mocha', '>= 0.13.0')
